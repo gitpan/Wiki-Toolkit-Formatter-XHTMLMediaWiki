@@ -1,0 +1,33 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.55.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 798ce507ba70f65d7698f5977c2671fce53aa176 Build.PL
+SHA1 5c3303490230f701dc94c0fcd0833f7db046f308 Changes
+SHA1 655268aac6f474271d17cb0f91686d6d0f38af24 MANIFEST
+SHA1 1b8e3791cae131021ed4e8ceffdd48d932c16ed3 META.yml
+SHA1 2d3d616119daa981dfa527b3ddb1e8f7c5d2ec7a README
+SHA1 bc5ad2701f44ec4d05dae8944934b199e1438f6d lib/Wiki/Toolkit/Formatter/XHTMLMediaWiki.pm
+SHA1 ab62eb1325750bd283f5acdda6fb837ac9102ac4 t/00-load.t
+SHA1 6da39b48ce64b584e4c3274bff96fc76ff484820 t/pod-coverage.t
+SHA1 0190346d7072d458c8a10a45c19f86db641dcc48 t/pod.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iGcEARECACcFAkdj9mEgGmh0dHA6Ly93d3cuZ2FtMy5uZXQvcG9saWN5Lmh0bWwA
+CgkQliSr/X1H0FxxWACgt6yYgnmsd/BxtIn/3BQLJESzdWsAn3JLhERSS0mfOmci
+rMtgkQiUVYyq
+=4e3u
+-----END PGP SIGNATURE-----
