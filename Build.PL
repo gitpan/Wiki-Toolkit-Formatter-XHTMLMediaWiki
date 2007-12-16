@@ -17,6 +17,7 @@ my $builder = Module::Build->new(
         'Test::XML' => 0,
         'Test::XML::Order' => 0,
     },
+    create_makefile_pl => 'traditional',
     create_readme => 1,
     sign          => 1,
 );

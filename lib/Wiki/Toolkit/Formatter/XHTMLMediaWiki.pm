@@ -13,12 +13,12 @@ Wiki::Toolkit::Formatter::XHTMLMediaWiki - A Mediawiki-style formatter for Wiki:
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
 use vars qw{$VERSION};
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 =head1 SYNOPSIS
 

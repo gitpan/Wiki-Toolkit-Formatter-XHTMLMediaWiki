@@ -3,7 +3,7 @@ NAME
     for Wiki::Toolkit.
 
 VERSION
-    Version 0.01
+    Version 0.02
 
 SYNOPSIS
     This package implements a formatter for the Wiki::Toolkit module which
