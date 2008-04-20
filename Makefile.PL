@@ -6,11 +6,9 @@ WriteMakefile
           'VERSION_FROM' => 'lib/Wiki/Toolkit/Formatter/XHTMLMediaWiki.pm',
           'PREREQ_PM' => {
                            'Carp' => '0',
-                           'Params::Validate' => '0.85',
                            'Test::More' => '0',
                            'Test::XML' => '0',
                            'Test::XML::Order' => '0',
-                           'URI::Escape' => '0',
                            'XHTML::MediaWiki' => '0'
                          },
           'INSTALLDIRS' => 'site',

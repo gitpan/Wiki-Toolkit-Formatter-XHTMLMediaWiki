@@ -7,10 +7,9 @@ my $builder = Module::Build->new(
     license             => 'perl',
     dist_author         => '"G. Allen Morris III" <gam3@gam3.net>',
     requires => {
+	'perl' => '5.6.0',
 	'Carp' => 0,
 	'XHTML::MediaWiki' => 0,
-	'URI::Escape' => 0,
-	'Params::Validate' => '0.85',
     },
     build_requires => {
         'Test::More' => 0,

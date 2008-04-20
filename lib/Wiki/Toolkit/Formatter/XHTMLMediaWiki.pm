@@ -1,8 +1,6 @@
 use strict;
 use warnings;
 
-use lib qw ( /home/gam3/src/text-mediawiki-xhtml/lib );
-
 package Wiki::Toolkit::Formatter::XHTMLMediaWiki;
 
 use base 'XHTML::MediaWiki';
@@ -13,12 +11,12 @@ Wiki::Toolkit::Formatter::XHTMLMediaWiki - A Mediawiki-style formatter for Wiki:
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
 use vars qw{$VERSION};
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 =head1 SYNOPSIS
 
@@ -32,7 +30,9 @@ used by Wikipedia and friends).
 
     my $store = Wiki::Toolkit::Store::Mediawiki->new( ... );
     # See below for parameter details.
-    my $formatter = Wiki::Toolkit::Formatter::XHTMLMediaWiki->new(store => $store);
+    my $formatter = Wiki::Toolkit::Formatter::XHTMLMediaWiki->new(
+       store => $store
+    );
     my $wiki = Wiki::Toolkit->new(store     => $store,
                                   formatter => $formatter);
 
@@ -44,10 +44,11 @@ use Carp qw(croak);
 
 =head2 new
 
-  my $store = Wiki::Toolkit::Store::Mediawiki->new( ... );
   my $formatter = Wiki::Toolkit::Formatter::XHTMLMediaWiki->new(
       store => $store
   );
+
+See: L<XHTML::MediaWiki> for other arguments
 
 =cut
 
@@ -55,7 +56,7 @@ sub new
 {
     my ($class, %args) = @_;
 
-    croak "`store' is a required argument" unless $args{store};
+#    croak "`store' is a required argument" unless $args{store};
     my $store = $args{store};
     delete $args{store};
 
@@ -73,19 +74,24 @@ __END__
 
   my $html = $formatter->format($content);
 
+This is the main method. You give this method C<wiki text> and it
+returns C<xhtml>.
+
 =cut
 
 =head1 SEE ALSO
 
 =over 4
 
-=item L<Wiki::Toolkit::Kwiki>
+=item L<XHTML::MediaWiki>
 
 =item L<Wiki::Toolkit>
 
 =item L<Wiki::Toolkit::Formatter::Default>
 
 =item L<Wiki::Toolkit::Store::Mediawiki>
+
+=item L<Wiki::Toolkit::Kwiki>
 
 =back
 
@@ -103,11 +109,7 @@ your bug as I make changes.
 
 =head1 SUPPORT
 
-You can find documentation for this module with the perldoc command.
-
-    perldoc Wiki::Toolkit::Formatter::XHTMLMediaWiki
-
-You can also look for information at:
+You can find more information at:
 
 =over 4
 
@@ -137,4 +139,3 @@ This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
 
 =cut
-

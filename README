@@ -3,7 +3,7 @@ NAME
     for Wiki::Toolkit.
 
 VERSION
-    Version 0.02
+    Version 0.03
 
 SYNOPSIS
     This package implements a formatter for the Wiki::Toolkit module which
@@ -16,25 +16,32 @@ SYNOPSIS
 
         my $store = Wiki::Toolkit::Store::Mediawiki->new( ... );
         # See below for parameter details.
-        my $formatter = Wiki::Toolkit::Formatter::XHTMLMediaWiki->new(store => $store);
+        my $formatter = Wiki::Toolkit::Formatter::XHTMLMediaWiki->new(
+           store => $store
+        );
         my $wiki = Wiki::Toolkit->new(store     => $store,
                                       formatter => $formatter);
 
 METHODS
   new
-      my $store = Wiki::Toolkit::Store::Mediawiki->new( ... );
       my $formatter = Wiki::Toolkit::Formatter::XHTMLMediaWiki->new(
           store => $store
       );
 
+    See: XHTML::MediaWiki for other arguments
+
   format
       my $html = $formatter->format($content);
 
+    This is the main method. You give this method "wiki text" and it returns
+    "xhtml".
+
 SEE ALSO
-    Wiki::Toolkit::Kwiki
+    XHTML::MediaWiki
     Wiki::Toolkit
     Wiki::Toolkit::Formatter::Default
     Wiki::Toolkit::Store::Mediawiki
+    Wiki::Toolkit::Kwiki
 
 AUTHOR
     "G. Allen Morris III" "<gam3 at gam3.net>"
@@ -48,11 +55,7 @@ BUGS
     of progress on your bug as I make changes.
 
 SUPPORT
-    You can find documentation for this module with the perldoc command.
-
-        perldoc Wiki::Toolkit::Formatter::XHTMLMediaWiki
-
-    You can also look for information at:
+    You can find more information at:
 
     * AnnoCPAN: Annotated CPAN documentation
         <http://annocpan.org/dist/Wiki-Toolkit-Formatter-XHTMLMediaWiki>
