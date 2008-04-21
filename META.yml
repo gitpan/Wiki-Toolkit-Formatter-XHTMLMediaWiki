@@ -1,6 +1,6 @@
 ---
 name: Wiki-Toolkit-Formatter-XHTMLMediaWiki
-version: 0.03
+version: 0.04
 author:
   - '"G. Allen Morris III" <gam3@gam3.net>'
 abstract: A Mediawiki-style formatter for Wiki::Toolkit.
@@ -18,7 +18,7 @@ build_requires:
 provides:
   Wiki::Toolkit::Formatter::XHTMLMediaWiki:
     file: lib/Wiki/Toolkit/Formatter/XHTMLMediaWiki.pm
-    version: 0.03
+    version: 0.04
 generated_by: Module::Build version 0.2807
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

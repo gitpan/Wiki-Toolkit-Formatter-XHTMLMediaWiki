@@ -11,12 +11,12 @@ Wiki::Toolkit::Formatter::XHTMLMediaWiki - A Mediawiki-style formatter for Wiki:
 
 =head1 VERSION
 
-Version 0.03
+Version 0.04
 
 =cut
 
 use vars qw{$VERSION};
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 =head1 SYNOPSIS
 
@@ -130,6 +130,10 @@ L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Wiki-Toolkit-Formatter-XHTMLMediaWiki
 L<http://search.cpan.org/dist/Wiki-Toolkit-Formatter-Mediawiki>
 
 =back
+
+=head1 EXAMPLE
+
+There is a simple example C<cgi-bin> file in the examples directory of the distribution.
 
 =head1 COPYRIGHT & LICENSE
 
